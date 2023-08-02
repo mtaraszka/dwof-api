@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ingredients_ingredients",
+  "info": {
+    "displayName": "UserIngredients",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ingredient.ingredient"
+    },
+    "quantity": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    }
+  }
+}
